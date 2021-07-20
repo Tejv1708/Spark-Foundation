@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+          background: url("/Spark Project/service.jpg"); 
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; 
+        }
+        .container{
+           
+            
+            text-align: center;
+
+
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            
+            }
+            input{
+                width: 40%;
+                border-radius: 23px;
+                margin-left: 500px;
+                padding: 13px 0;
+
+                
+            }
+            select{
+                display: flex;
+                width: 40%;
+                margin-left: 500px;
+                padding: 13px 0 ;
+        border-radius: 23px;
+            }
+        #email{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phoneNo">Phone No:</label>
+            <input type="number" name="phoneNo" id="phoneNo">
+            <p>Selecte your country</p>
+            <select id="country" name="country">
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+        </form>
+        
+    </div>
+</body>
+</html>
